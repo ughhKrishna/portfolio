@@ -3,10 +3,18 @@ import React from "react";
 export default function () {
   return (
     <div className="landing-container">
-      <h1>Krishna</h1>
-      <h1>
-        Rathnam<sup>&copy;</sup>
-      </h1>
+      <div>
+        <h1 className="my-name">
+          Krishna Rathnam<sup>&copy;</sup>
+        </h1>
+      </div>
+      <div>
+        <p className="about-me">
+          I help growing brands and startups gain <br />
+          an unfair advantage through premium, <br />
+          results driven websites.
+        </p>
+      </div>
     </div>
   );
 }
