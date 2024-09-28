@@ -54,7 +54,7 @@ header {
 .cta,
 .overlay__content a {
   font-weight: 500;
-  color: #141412;
+  color: #e0e0db;
   text-decoration: none;
 }
 
@@ -64,10 +64,11 @@ header {
 
 .nav__links li a {
   transition: all 0.3s ease 0s;
+  color: #e0e0db;
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: #bdbdb2;
 }
 
 .cta {
@@ -126,7 +127,7 @@ header {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #0088a9;
+  color: #bdbdb2;
 }
 .overlay .close {
   position: absolute;
@@ -135,6 +136,10 @@ header {
   font-size: 60px;
   color: #edf0f1;
   cursor: pointer;
+}
+
+.nav__links {
+  color: #e0e0db;
 }
 
 @media screen and (max-height: 450px) {
