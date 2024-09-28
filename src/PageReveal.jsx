@@ -6,7 +6,6 @@ export default function PageReveal() {
 
   setTimeout(() => {
     setAtStart(false);
-    console.log("hello");
   }, 5000);
 
   return (
