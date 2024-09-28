@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 
 .page-reveal--active {
@@ -35,16 +36,8 @@
     opacity: 0;
   }
 
-  25% {
-    opacity: 0.75;
-  }
-
   50% {
     opacity: 1;
-  }
-
-  75% {
-    opacity: 0.25;
   }
 
   100% {
