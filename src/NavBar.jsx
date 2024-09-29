@@ -10,6 +10,7 @@ function NavBar() {
   function removeActive() {
     setPhoneOpen(false);
   }
+
   return (
     <>
       <header>
@@ -35,7 +36,7 @@ function NavBar() {
             </li>
           </ul>
         </nav>
-        <a className="cta" href="mailto:kr130205@gmail.com">
+        <a className="cta" href="mailto:kr130205@gmail.com@gmail.com">
           Contact
         </a>
         <p className="menu cta" onClick={addActive}>
