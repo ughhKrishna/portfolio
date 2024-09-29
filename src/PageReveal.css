@@ -8,6 +8,7 @@
   font-family: "Poppins", sans-serif;
   color: #141412;
   opacity: 0;
+  overflow: hidden;
   animation: fadeInOut 5s;
 }
 

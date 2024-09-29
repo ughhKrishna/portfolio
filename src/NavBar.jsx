@@ -35,7 +35,7 @@ function NavBar() {
             </li>
           </ul>
         </nav>
-        <a className="cta" href="#">
+        <a className="cta" href="mailto:kr130205@gmail.com">
           Contact
         </a>
         <p className="menu cta" onClick={addActive}>

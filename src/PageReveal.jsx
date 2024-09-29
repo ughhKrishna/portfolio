@@ -11,7 +11,7 @@ export default function PageReveal() {
   return (
     <>
       <div className={`page-reveal ${atStart && "page-reveal--active"}`}>
-        <h1 className="page-reveal-text">design that speaks for your brand.</h1>
+        <h1 className="page-reveal-text">A agency for all your needs.</h1>
       </div>
     </>
   );

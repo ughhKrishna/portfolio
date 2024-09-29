@@ -1,18 +1,27 @@
 export default function LandingPage() {
   return (
-    <div className="landing-container">
-      <div>
-        <h1 className="my-name">
-          Krishna Rathnam<sup>&copy;</sup>
-        </h1>
+    <>
+      <div className="landing-page">
+        <div className="landing-header">
+          <h1 className="my-name">
+            Krishna Rathnam<sup>&copy;</sup>
+          </h1>
+        </div>
+        <div className="about-me-container">
+          <div className="about-me-text-container">
+            <span className="arrow">&#8627;</span>
+            <p className="about-me">
+              I help growing brands and startups gain a competitive edge with
+              results-driven websites and compelling brand identities. By
+              blending creative strategy and data insights, I drive visibility,
+              conversions, and growth.
+            </p>
+          </div>
+          <div className="img-container">
+            <img src="src\assets\myface.jpeg" alt="My Image" />
+          </div>
+        </div>
       </div>
-      <div>
-        <p className="about-me">
-          I help growing brands and startups gain <br />
-          an unfair advantage through premium, <br />
-          results driven websites.
-        </p>
-      </div>
-    </div>
+    </>
   );
 }
