@@ -2,7 +2,7 @@
 /* #141412 #bdbdb2 #24252a #e0e0db */
 
 .page-reveal-text {
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -10,6 +10,9 @@
   opacity: 0;
   overflow: hidden;
   animation: fadeInOut 5s;
+  overflow: hidden;
+  white-space: nowrap;
+  /* animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; */
 }
 
 .page-reveal {

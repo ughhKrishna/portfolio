@@ -18,7 +18,7 @@ export default function LandingPage() {
             </p>
           </div>
           <div className="img-container">
-            <img src="./myface.jpeg" alt="My Image" />
+            <img src="./download.jpg" alt="My Image" />
           </div>
         </div>
       </div>
