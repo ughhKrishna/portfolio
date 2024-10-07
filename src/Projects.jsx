@@ -1,6 +1,6 @@
 // Projects.jsx
 import { useEffect, useState } from "react";
-import "./Projects.css"; // Import the CSS file for styles
+import "./projects.css"; // Import the CSS file for styles
 
 const projectsData = [
   {
