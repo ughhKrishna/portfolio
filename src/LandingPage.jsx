@@ -1,7 +1,18 @@
-export default function LandingPage() {
+/* eslint-disable react/prop-types */
+import NavBar from "./NavBar";
+
+export default function LandingPage({ scrollY }) {
   return (
     <>
-      <div className="landing-page">
+      <section
+        className="landing"
+        style={{
+          opacity: `${Math.max(1 - scrollY / 300, 0)}`, // Gradually decrease opacity
+          transform: `translateY(${scrollY * 0.5}px)`, // Move down as you scroll
+          zIndex: scrollY > window.innerHeight * 0.9 ? 0 : 2, // Push behind the service section after scrolling past 90% of window height
+        }}
+      >
+        <NavBar />
         <div className="landing-header">
           <h1 className="my-name">
             Krishna Rathnam<sup>&copy;</sup>
@@ -21,7 +32,7 @@ export default function LandingPage() {
             <img src="./download.jpg" alt="My Image" />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

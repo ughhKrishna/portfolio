@@ -29,9 +29,14 @@ header {
   text-transform: uppercase;
 }
 
-.landing-page {
+.landing {
   width: 100%;
-  height: 93.9vh;
+  position: fixed; /* Fixed positioning for smooth scroll effect */
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s ease, transform 1s ease;
+  z-index: 2; /* Stays above service section initially */
 }
 .img-container {
   display: flex;
@@ -43,6 +48,7 @@ img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   border-radius: 15px;
+  z-index: -1;
 }
 
 .arrow {
@@ -180,6 +186,65 @@ img {
   color: #e0e0db;
 }
 
+section {
+  height: 100vh;
+}
+
+.service {
+  background-color: #141412;
+  color: #e0e0db;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  z-index: 10; /* Initially below the landing section */
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  transition: border-radius 0.5s ease; /* Smooth transition for border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-content {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .service {
+    border-top-left-radius: 15%; /* Smaller radius for mobile */
+    border-top-right-radius: 15%;
+  }
+}
+.service-content.show {
+  opacity: 1; /* Visible when animated */
+  transform: translateX(0px);
+}
+
+.service-content.hidden {
+  opacity: 0; /* Hidden when not animated */
+}
+
+@keyframes fadeout {
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes fadeOutContainer {
+  to {
+    opacity: 0;
+    scale: 0.7;
+    transform: translateY(120px);
+  }
+}
+
+@keyframes enlargeServiceContainer {
+  to {
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+}
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
