@@ -6,25 +6,25 @@ const services = [
     number: "01",
     title: "Brand Identity Design",
     content:
-      "We create unique brand identities that resonate with your audience. Our process includes comprehensive market research, logo design, and visual identity development, ensuring your brand stands out in a crowded marketplace. Let us help you establish a cohesive brand presence that builds trust and loyalty.",
+      "We craft unique brand identities that capture your vision. From logos to full branding, we ensure your business stands out and connects with your audience.",
   },
   {
     number: "02",
     title: "Custom Website Development",
     content:
-      "Our website development services focus on creating robust, scalable, and secure websites tailored to your specific business needs. We utilize modern technologies and frameworks to ensure optimal performance, seamless user experiences, and easy content management, making it easy for you to engage with your customers.",
+      "Our websites are built for your specific business needs, focusing on performance, security, and user experience to boost customer engagement.",
   },
   {
     number: "03",
     title: "Responsive Website Design",
     content:
-      "We design beautiful and functional websites that not only capture attention but also drive engagement and conversions. Our design philosophy prioritizes user experience, ensuring that every element is thoughtfully placed to guide visitors through your site. From wireframes to final designs, we create visually stunning websites that reflect your brand identity.",
+      "We design responsive, visually striking websites that deliver a seamless experience on any device, driving both engagement and conversions.",
   },
   {
     number: "04",
     title: "SEO Optimization Services",
     content:
-      "Our SEO optimization services are designed to improve your website’s visibility on search engines. We conduct thorough keyword research, on-page optimization, and backlinking strategies to help your business rank higher and attract organic traffic. Stay ahead of the competition and connect with your audience through effective SEO strategies that drive results.",
+      "Boost your website's visibility with our SEO services. We help you rank higher on search engines and drive organic traffic with effective strategies.",
   },
 ];
 export default function Service() {
