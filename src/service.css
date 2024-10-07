@@ -1,30 +1,3 @@
-/* const services = [
-  {
-    number: "01",
-    title: "Brand Identity Design",
-    content:
-      "We create unique brand identities that resonate with your audience. Our process includes comprehensive market research, logo design, and visual identity development, ensuring your brand stands out in a crowded marketplace. Let us help you establish a cohesive brand presence that builds trust and loyalty.",
-  },
-  {
-    number: "02",
-    title: "Custom Website Development",
-    content:
-      "Our website development services focus on creating robust, scalable, and secure websites tailored to your specific business needs. We utilize modern technologies and frameworks to ensure optimal performance, seamless user experiences, and easy content management, making it easy for you to engage with your customers.",
-  },
-  {
-    number: "03",
-    title: "Responsive Website Design",
-    content:
-      "We design beautiful and functional websites that not only capture attention but also drive engagement and conversions. Our design philosophy prioritizes user experience, ensuring that every element is thoughtfully placed to guide visitors through your site. From wireframes to final designs, we create visually stunning websites that reflect your brand identity.",
-  },
-  {
-    number: "04",
-    title: "SEO Optimization Services",
-    content:
-      "Our SEO optimization services are designed to improve your website’s visibility on search engines. We conduct thorough keyword research, on-page optimization, and backlinking strategies to help your business rank higher and attract organic traffic. Stay ahead of the competition and connect with your audience through effective SEO strategies that drive results.",
-  },
-]; */
-
 .service {
   background-color: #141412; /* Background color for the entire service section */
   color: #e0e0db;
@@ -32,8 +5,8 @@
   margin: 0; /* No margin to take full width */
   position: relative;
   z-index: 10; /* Initially below the landing section */
-  border-top-left-radius: 25%;
-  border-top-right-radius: 25%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   transition: all 0.5s ease; /* Smooth transition for border */
   height: auto; /* Allow height to adjust based on content */
   width: 100%; /* Ensure full width */

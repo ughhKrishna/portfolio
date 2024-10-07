@@ -78,10 +78,10 @@ export default function Service() {
       style={{
         borderTopLeftRadius: isMobile
           ? "0"
-          : `${Math.max(25 - scrollY / 20, 0)}%`,
+          : `${Math.max(150 - scrollY / 10, 0)}px`,
         borderTopRightRadius: isMobile
           ? "0"
-          : `${Math.max(25 - scrollY / 20, 0)}%`,
+          : `${Math.max(150 - scrollY / 10, 0)}px`,
       }}
     >
       {services.map((service, index) => (
