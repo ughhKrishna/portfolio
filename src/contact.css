@@ -1,0 +1,78 @@
+.contact-section {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  padding: 40px;
+  background-color: #48483d; /* Dark background color */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease-in-out; /* Transition for opacity */
+}
+
+.contact-text-container {
+  text-align: center; /* Center text inside the container */
+  color: #e0e0db; /* Text color */
+  background-color: #141412;
+  padding: 250px;
+  border-radius: 60px;
+}
+
+.contact-subtitle {
+  font-size: 18px; /* Smaller subtitle text */
+  margin-bottom: 10px; /* Space below subtitle */
+  opacity: 0.4;
+}
+
+.contact-title {
+  font-size: 6em; /* Large title text */
+  margin: 20px 0; /* Space above and below title */
+  text-transform: uppercase;
+}
+
+.message-button {
+  padding: 12px 24px; /* Padding for the button */
+  background-color: #6c6f60; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Button text size */
+  transition: background-color 0.3s; /* Transition for background color */
+  margin-bottom: 15px; /* Space below the button */
+  margin-bottom: 90px;
+}
+
+.message-button:hover {
+  background-color: #494b40; /* Darker shade on hover */
+}
+
+.global-message {
+  font-size: 16px; /* Regular message text size */
+  color: #e0e0db; /* Message text color */
+  /* Transition for opacity */
+}
+
+/* Fade-in effect for the entire section */
+.fade-in {
+  opacity: 1; /* Make item fully visible */
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 36px; /* Smaller title for mobile devices */
+  }
+
+  .contact-subtitle {
+    font-size: 16px; /* Smaller subtitle for mobile devices */
+  }
+
+  .message-button {
+    font-size: 14px; /* Smaller button text */
+  }
+
+  .global-message {
+    font-size: 14px; /* Smaller message text */
+  }
+}

@@ -1,8 +1,10 @@
 // import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 import LandingPage from "./LandingPage";
+import Projects from "./Projects";
 // import PageReveal from "./PageReveal";
 import Service from "./Service";
+import Contact from "./Contact";
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -47,6 +49,8 @@ function App() {
       <LandingPage scrollY={scrollY} />
       <div style={{ height: "100vh" }}></div>
       <Service isVisible={isVisible} scrollY={scrollY} />
+      <Projects />
+      <Contact />
     </>
   );
 }
