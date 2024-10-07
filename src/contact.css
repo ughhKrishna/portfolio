@@ -5,7 +5,7 @@
   height: 100vh; /* Full viewport height */
   width: 100%; /* Full width */
   padding: 40px;
-  background-color: #48483d; /* Dark background color */
+  background-color: #141412; /* Dark background color */
   opacity: 1; /* Start hidden */
 }
 
@@ -29,7 +29,7 @@
 .message-button {
   display: inline-block; /* Make it behave like a block for padding */
   padding: 12px 24px; /* Padding for the button */
-  background-color: #141412; /* Button background color */
+  background-color: #6c6f60; /* Button background color */
   color: #fff; /* Button text color */
   text-decoration: none; /* Remove underline from link */
   border-radius: 5px; /* Rounded corners */
