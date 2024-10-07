@@ -1,0 +1,168 @@
+/* const services = [
+  {
+    number: "01",
+    title: "Brand Identity Design",
+    content:
+      "We create unique brand identities that resonate with your audience. Our process includes comprehensive market research, logo design, and visual identity development, ensuring your brand stands out in a crowded marketplace. Let us help you establish a cohesive brand presence that builds trust and loyalty.",
+  },
+  {
+    number: "02",
+    title: "Custom Website Development",
+    content:
+      "Our website development services focus on creating robust, scalable, and secure websites tailored to your specific business needs. We utilize modern technologies and frameworks to ensure optimal performance, seamless user experiences, and easy content management, making it easy for you to engage with your customers.",
+  },
+  {
+    number: "03",
+    title: "Responsive Website Design",
+    content:
+      "We design beautiful and functional websites that not only capture attention but also drive engagement and conversions. Our design philosophy prioritizes user experience, ensuring that every element is thoughtfully placed to guide visitors through your site. From wireframes to final designs, we create visually stunning websites that reflect your brand identity.",
+  },
+  {
+    number: "04",
+    title: "SEO Optimization Services",
+    content:
+      "Our SEO optimization services are designed to improve your website’s visibility on search engines. We conduct thorough keyword research, on-page optimization, and backlinking strategies to help your business rank higher and attract organic traffic. Stay ahead of the competition and connect with your audience through effective SEO strategies that drive results.",
+  },
+]; */
+
+.service {
+  background-color: #141412; /* Background color for the entire service section */
+  color: #e0e0db;
+  padding: 40px 20px;
+  margin: 0; /* No margin to take full width */
+  position: relative;
+  z-index: 10; /* Initially below the landing section */
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  transition: all 0.5s ease; /* Smooth transition for border */
+  height: auto; /* Allow height to adjust based on content */
+  width: 100%; /* Ensure full width */
+}
+
+.service-item {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  opacity: 0;
+  transform: translateX(-90px);
+  transition: opacity 0.3s ease, transform 0.5s ease;
+  height: 350px; /* Fixed height for each service item */
+  max-width: 1200px; /* Maximum width for each service item */
+  margin: 40px auto; /* Center the service item with space around */
+}
+
+.service-number {
+  font-size: 230px; /* Make the number fill the height of the div */
+  font-weight: bold;
+  color: #6c6f60;
+
+  width: 40%; /* Take up 40% of the space */
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Center the number vertically */
+  flex-shrink: 0; /* Ensure the number doesn't shrink */
+  margin-left: 20px; /* Add some margin on the left */
+}
+
+.service-content {
+  flex-grow: 1; /* Make the content take the remaining space */
+  padding-left: 20px; /* Add some padding to the left for spacing */
+  display: flex;
+  flex-direction: column; /* Stack the title and paragraph vertically */
+  justify-content: center; /* Center the content vertically */
+  height: 100%; /* Ensure full height usage */
+  border-bottom: 2px solid #bdbdb2; /* Add border only below content */
+  padding-bottom: 20px; /* Space between content and border */
+}
+
+.service-content h2 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  color: #6c6f60;
+  margin: 0; /* Remove margin for better alignment */
+}
+
+.service-content p {
+  font-size: 1.2rem;
+  color: #e0e0db;
+  line-height: 1.4; /* Adjust line height to fit content better */
+  margin-top: 5px; /* Add some spacing between the title and paragraph */
+  margin-right: 20px; /* Add right margin to fill the space */
+}
+
+.service.animate .service-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive Design */
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+  .service-item {
+    flex-direction: column; /* Stack items vertically */
+    margin: 20px auto; /* Adjust margin for smaller screens */
+  }
+
+  .service-number {
+    font-size: 150px; /* Adjust size for tablet */
+    width: 100%; /* Full width on tablet */
+    margin-bottom: 10px; /* Space between number and content */
+    text-align: center; /* Center align number */
+  }
+
+  .service-content h2 {
+    font-size: 2rem; /* Reduce size for tablet */
+  }
+
+  .service-content p {
+    font-size: 1rem; /* Reduce size for tablet */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .service {
+    border-top-left-radius: 0; /* Remove border radius */
+    border-top-right-radius: 0; /* Remove border radius */
+    transition: none; /* Disable transition on mobile */
+  }
+  .service-item {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Allow items to adjust height based on content */
+    margin: 10px auto; /* Adjust margin for smaller screens */
+  }
+
+  .service-number {
+    font-size: 100px; /* Adjust size for mobile */
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 10px; /* Space between number and content */
+    text-align: center; /* Center align number */
+  }
+
+  .service-content h2 {
+    font-size: 1.5rem; /* Reduce size for mobile */
+  }
+
+  .service-content p {
+    font-size: 0.9rem; /* Reduce size for mobile */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .service-item {
+    height: auto; /* Allow items to adjust height based on content */
+  }
+
+  .service-number {
+    font-size: 80px; /* Further reduce size for extra small devices */
+  }
+
+  .service-content h2 {
+    font-size: 1.3rem; /* Further reduce size for extra small devices */
+  }
+
+  .service-content p {
+    font-size: 0.8rem; /* Further reduce size for extra small devices */
+  }
+}
