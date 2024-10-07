@@ -6,16 +6,12 @@
   width: 100%; /* Full width */
   padding: 40px;
   background-color: #48483d; /* Dark background color */
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease-in-out; /* Transition for opacity */
+  opacity: 1; /* Start hidden */
 }
 
 .contact-text-container {
   text-align: center; /* Center text inside the container */
   color: #e0e0db; /* Text color */
-  background-color: #141412;
-  padding: 250px;
-  border-radius: 60px;
 }
 
 .contact-subtitle {
@@ -31,20 +27,20 @@
 }
 
 .message-button {
+  display: inline-block; /* Make it behave like a block for padding */
   padding: 12px 24px; /* Padding for the button */
-  background-color: #6c6f60; /* Button background color */
+  background-color: #141412; /* Button background color */
   color: #fff; /* Button text color */
-  border: none; /* No border */
+  text-decoration: none; /* Remove underline from link */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
   font-size: 16px; /* Button text size */
   transition: background-color 0.3s; /* Transition for background color */
-  margin-bottom: 15px; /* Space below the button */
-  margin-bottom: 90px;
+  margin-bottom: 45px; /* Space below the button */
 }
 
 .message-button:hover {
-  background-color: #494b40; /* Darker shade on hover */
+  background-color: #30302c; /* Darker shade on hover */
 }
 
 .global-message {
@@ -60,8 +56,15 @@
 
 /* Adjustments for mobile responsiveness */
 @media (max-width: 768px) {
+  .contact-section {
+    height: 100%;
+    width: 100%;
+  }
+  .contact-text-container {
+    padding: 70px;
+  }
   .contact-title {
-    font-size: 36px; /* Smaller title for mobile devices */
+    font-size: 60px; /* Smaller title for mobile devices */
   }
 
   .contact-subtitle {

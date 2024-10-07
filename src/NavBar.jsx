@@ -26,17 +26,21 @@ function NavBar() {
         <nav>
           <ul className="nav__links">
             <li>
-              <a href="#">Services</a>
+              <a href="#service">Services</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
           </ul>
         </nav>
-        <a className="cta" href="mailto:kr130205@gmail.com@gmail.com">
+        <a
+          className="cta"
+          href="https://ig.me/m/castleofimprnt"
+          target="_blank"
+        >
           Contact
         </a>
         <p className="menu cta" onClick={addActive}>

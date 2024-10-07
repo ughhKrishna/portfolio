@@ -74,14 +74,15 @@ export default function Service() {
 
   return (
     <section
+      id="service"
       className={`service ${isVisible ? "animate" : ""}`}
       style={{
         borderTopLeftRadius: isMobile
           ? "0"
-          : `${Math.max(150 - scrollY / 10, 0)}px`,
+          : `${Math.max(25 - scrollY / 20, 0)}%`,
         borderTopRightRadius: isMobile
           ? "0"
-          : `${Math.max(150 - scrollY / 10, 0)}px`,
+          : `${Math.max(25 - scrollY / 20, 0)}%`,
       }}
     >
       {services.map((service, index) => (
@@ -89,7 +90,7 @@ export default function Service() {
           className={`service-item`}
           key={service.number}
           style={{
-            transitionDelay: `${index * 0.5}s`, // Add delay based on index
+            transitionDelay: `${index * 0.2}s`, // Add delay based on index
           }}
         >
           <div className="service-number">{service.number}</div>

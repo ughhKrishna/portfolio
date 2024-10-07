@@ -5,6 +5,7 @@ export default function LandingPage({ scrollY }) {
   return (
     <>
       <section
+        id="about"
         className="landing"
         style={{
           opacity: `${Math.max(1 - scrollY / 300, 0)}`, // Gradually decrease opacity

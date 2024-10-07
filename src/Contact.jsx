@@ -26,7 +26,13 @@ const Contact = () => {
       <div className="contact-text-container">
         <h2 className="contact-subtitle">(Need an unfair advantage?)</h2>
         <h1 className="contact-title">Let&apos;s make it happen</h1>
-        <button className="message-button">Message Me</button>
+        <a
+          className="message-button"
+          href="https://ig.me/m/castleofimprnt"
+          target="_blank"
+        >
+          Message Me
+        </a>
         <p className="global-message">We are working globally! 🌎</p>
       </div>
     </div>
