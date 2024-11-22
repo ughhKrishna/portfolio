@@ -242,6 +242,16 @@ section {
   }
 }
 
+@media only screen and (max-height: 880px) {
+  img {
+    height: 400px;
+  }
+
+  .about-me-text-container {
+    font-size: 1r;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   img {
     height: 300px;
